@@ -1,0 +1,50 @@
+body
+    font-family: Tahoma, Geneva, sans-serif
+    font-size: 1pc
+form
+    clear: both
+    margin:auto
+    position:relative
+    text-decoration: none
+    padding:1em
+    /* Force form elements to be consistent with each other */
+    input, textarea, select, button
+        margin: 1pt
+        -webkit-box-sizing: border-box
+        -moz-box-sizing: border-box
+        box-sizing: border-box
+    select
+        width: 100%
+    input
+        display:block
+    input[type=submit], button
+        background: #09C
+        color: #fff
+        -webkit-border-radius: 5pt
+        -moz-border-radius: 5pt
+        border-radius: 5pt
+        border: 1pt solid #999
+    input[type=submit]
+        margin-left: 15em
+	margin-top: 2em
+    input[type=submit]:hover, button:hover
+        background:#fff
+        color:#09c
+
+/* force bottom border to extend below floating elements */
+form::after
+    content: ""
+    display: block
+    visibility: hidden
+    clear: both
+
+/* add rounded grey box around text
+pre
+    -webkit-border-radius: 5pt
+    -moz-border-radius: 5pt
+    border-radius: 5pt
+    border: 1pt solid #999
+    background: #DDD
+    margin: 1em
+    padding: 1em
+    white-space: pre-wrap */
